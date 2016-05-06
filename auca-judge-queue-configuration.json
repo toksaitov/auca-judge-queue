@@ -1,0 +1,18 @@
+{
+  "periodic": true,
+  "periodicDelay": 5000,
+  "heartbeatDelay": 5000,
+  "backServer": "http://0.0.0.0:7070/submit",
+  "databases": {
+    "service": {
+      "hosts": ["0.0.0.0:2379"]
+    },
+    "queue": {
+      "host": "0.0.0.0",
+      "port": "6379"
+    },
+    "task": {
+      "url": "mongodb://0.0.0.0/auca_judge"
+    }
+  }
+}
