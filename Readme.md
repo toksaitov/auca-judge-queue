@@ -41,11 +41,6 @@ current working directory under the name *auca-judge-queue-configuration.json*
 
   time in milliseconds between task queue checks (set to 1000 by default)
 
-* `"heartbeatDelay": number`
-
-  time in milliseconds to send service discovery information to etcd (set to
-  5000 by default)
-
 * `"backServer": string`
 
   URL to a working instance of the *auca-judge-back* service that will be used
@@ -71,8 +66,9 @@ current working directory under the name *auca-judge-queue-configuration.json*
   * *AUCA_JUDGE_QUEUE_QUEUE_DATABASE*
   * *AUCA_JUDGE_QUEUE_TASK_DATABASE*
 
-  By default database connection options will be set to point to *localhost*
-  with default etcd, Redis, and MongoDB ports.
+  By default Redis and Mongo database connection options will be set to point to
+  *localhost* with default Redis and MongoDB ports. Absence of etcd connection
+  options will disable the use of it.
 
 ### Sample Configuration Files
 
@@ -80,7 +76,6 @@ current working directory under the name *auca-judge-queue-configuration.json*
 {
   "periodic": true,
   "periodicDelay": 1000,
-  "heartbeatDelay": 5000,
   "backServer": "http://0.0.0.0:7070",
   "databases": {
     "service": {
