@@ -65,6 +65,16 @@ current working directory under the name *auca-judge-queue-configuration.json*
   * queue: Redis, [ioredis](https://github.com/luin/ioredis)
   * task: MongoDB, [mongoose](https://github.com/Automattic/mongoose)
 
+  Database connection options can be overriden with a JSON entry in the
+  following environment variables
+
+  * *AUCA_JUDGE_QUEUE_SERVICE_DATABASE*
+  * *AUCA_JUDGE_QUEUE_QUEUE_DATABASE*
+  * *AUCA_JUDGE_QUEUE_TASK_DATABASE*
+
+  By default database connection options will be set to point to *localhost*
+  with default etcd, Redis, and MongoDB ports.
+
 ### Sample Configuration Files
 
 ```json
@@ -82,7 +92,7 @@ current working directory under the name *auca-judge-queue-configuration.json*
       "port": "6379"
     },
     "task": {
-      "url": "mongodb://0.0.0.0/auca_judge"
+      "url": "mongodb://0.0.0.0:27017/auca_judge"
     }
   }
 }

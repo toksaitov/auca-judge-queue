@@ -12,7 +12,7 @@
       "port": "6379"
     },
     "task": {
-      "url": "mongodb://0.0.0.0/auca_judge"
+      "url": "mongodb://0.0.0.0:27017/auca_judge"
     }
   }
 }
