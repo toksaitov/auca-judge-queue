@@ -12,7 +12,6 @@ and start its work on an event of a new task being published.
 ## Prerequisites
 
 * *Node.js*, *npm* `>=4.4.3`, `>=2.15.2`
-* *Docker* `>= 1.10`
 * *etcd* `>= 2.3.0`
 * *Redis* `>= 3.0.7`
 * *MongoDB* `>= 3.2.5`
