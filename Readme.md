@@ -13,7 +13,7 @@ wake up and start its work immediately.
 # Services
 
 *auca-judge-queue* is part of the [auca-judge](https://github.com/toksaitov/auca-judge)
-system to test code submissions to help to conduct laboratory classes or
+system to test code submissions to help conducting laboratory classes and
 programming contests at [AUCA](https://auca.kg).
 
 * UI front
